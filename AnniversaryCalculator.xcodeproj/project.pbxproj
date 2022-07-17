@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1225F14A2880FED200A64A5B /* TransitionSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1225F1492880FED200A64A5B /* TransitionSecondViewController.swift */; };
+		1232D6CE287FAEDD00A1985A /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 1232D6CD287FAEDD00A1985A /* SideMenu */; };
+		1232D6D1287FAF3D00A1985A /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 1232D6D0287FAF3D00A1985A /* FSCalendar */; };
+		1232D6D4287FAFDA00A1985A /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 1232D6D3287FAFDA00A1985A /* TextFieldEffects */; };
+		1232D6D6287FB21D00A1985A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1232D6D5287FB21D00A1985A /* Setting.storyboard */; };
+		1232D6D8287FB22900A1985A /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1232D6D7287FB22900A1985A /* Search.storyboard */; };
+		123B1B55287FBE4F0048B7CF /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 123B1B54287FBE4F0048B7CF /* IQKeyboardManagerSwift */; };
+		124485672880E83F00105150 /* Transition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 124485662880E83F00105150 /* Transition.storyboard */; };
+		124485692880EFBC00105150 /* TransitionFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124485682880EFBC00105150 /* TransitionFirstViewController.swift */; };
 		1271A893287F293400263A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1271A892287F293400263A9F /* AppDelegate.swift */; };
 		1271A895287F293400263A9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1271A894287F293400263A9F /* SceneDelegate.swift */; };
 		1271A897287F293400263A9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1271A896287F293400263A9F /* ViewController.swift */; };
@@ -17,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1225F1492880FED200A64A5B /* TransitionSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionSecondViewController.swift; sourceTree = "<group>"; };
+		1232D6D5287FB21D00A1985A /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		1232D6D7287FB22900A1985A /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		124485662880E83F00105150 /* Transition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transition.storyboard; sourceTree = "<group>"; };
+		124485682880EFBC00105150 /* TransitionFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionFirstViewController.swift; sourceTree = "<group>"; };
 		1271A88F287F293400263A9F /* AnniversaryCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnniversaryCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1271A892287F293400263A9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1271A894287F293400263A9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +47,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1232D6D4287FAFDA00A1985A /* TextFieldEffects in Frameworks */,
+				123B1B55287FBE4F0048B7CF /* IQKeyboardManagerSwift in Frameworks */,
+				1232D6CE287FAEDD00A1985A /* SideMenu in Frameworks */,
+				1232D6D1287FAF3D00A1985A /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,8 @@
 		1271A886287F293400263A9F = {
 			isa = PBXGroup;
 			children = (
+				1225F1492880FED200A64A5B /* TransitionSecondViewController.swift */,
+				124485682880EFBC00105150 /* TransitionFirstViewController.swift */,
 				1271A891287F293400263A9F /* AnniversaryCalculator */,
 				1271A890287F293400263A9F /* Products */,
 			);
@@ -62,6 +82,9 @@
 				1271A894287F293400263A9F /* SceneDelegate.swift */,
 				1271A896287F293400263A9F /* ViewController.swift */,
 				1271A898287F293400263A9F /* Main.storyboard */,
+				124485662880E83F00105150 /* Transition.storyboard */,
+				1232D6D5287FB21D00A1985A /* Setting.storyboard */,
+				1232D6D7287FB22900A1985A /* Search.storyboard */,
 				1271A8A6287F2DFB00263A9F /* DatePickerViewController.swift */,
 				1271A89B287F293600263A9F /* Assets.xcassets */,
 				1271A89D287F293600263A9F /* LaunchScreen.storyboard */,
@@ -86,6 +109,12 @@
 			dependencies = (
 			);
 			name = AnniversaryCalculator;
+			packageProductDependencies = (
+				1232D6CD287FAEDD00A1985A /* SideMenu */,
+				1232D6D0287FAF3D00A1985A /* FSCalendar */,
+				1232D6D3287FAFDA00A1985A /* TextFieldEffects */,
+				123B1B54287FBE4F0048B7CF /* IQKeyboardManagerSwift */,
+			);
 			productName = AnniversaryCalculator;
 			productReference = 1271A88F287F293400263A9F /* AnniversaryCalculator.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +143,12 @@
 				Base,
 			);
 			mainGroup = 1271A886287F293400263A9F;
+			packageReferences = (
+				1232D6CC287FAEDD00A1985A /* XCRemoteSwiftPackageReference "SideMenu" */,
+				1232D6CF287FAF3D00A1985A /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				1232D6D2287FAFDA00A1985A /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				123B1B53287FBE4F0048B7CF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 1271A890287F293400263A9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,8 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1271A89F287F293600263A9F /* LaunchScreen.storyboard in Resources */,
+				124485672880E83F00105150 /* Transition.storyboard in Resources */,
 				1271A89C287F293600263A9F /* Assets.xcassets in Resources */,
 				1271A89A287F293400263A9F /* Main.storyboard in Resources */,
+				1232D6D6287FB21D00A1985A /* Setting.storyboard in Resources */,
+				1232D6D8287FB22900A1985A /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1271A8A7287F2DFB00263A9F /* DatePickerViewController.swift in Sources */,
+				124485692880EFBC00105150 /* TransitionFirstViewController.swift in Sources */,
 				1271A897287F293400263A9F /* ViewController.swift in Sources */,
+				1225F14A2880FED200A64A5B /* TransitionSecondViewController.swift in Sources */,
 				1271A893287F293400263A9F /* AppDelegate.swift in Sources */,
 				1271A895287F293400263A9F /* SceneDelegate.swift in Sources */,
 			);
@@ -364,6 +404,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1232D6CC287FAEDD00A1985A /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		1232D6CF287FAF3D00A1985A /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		1232D6D2287FAFDA00A1985A /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		123B1B53287FBE4F0048B7CF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1232D6CD287FAEDD00A1985A /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1232D6CC287FAEDD00A1985A /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+		1232D6D0287FAF3D00A1985A /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1232D6CF287FAF3D00A1985A /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		1232D6D3287FAFDA00A1985A /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1232D6D2287FAFDA00A1985A /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
+		};
+		123B1B54287FBE4F0048B7CF /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 123B1B53287FBE4F0048B7CF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1271A887287F293400263A9F /* Project object */;
 }

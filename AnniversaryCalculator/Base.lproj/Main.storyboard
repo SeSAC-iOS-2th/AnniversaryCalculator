@@ -17,8 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="4E7-xh-vIm">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="4E7-xh-vIm">
                                 <rect key="frame" x="0.0" y="84" width="414" height="216"/>
+                                <connections>
+                                    <action selector="datePickerEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="XyC-yk-Yqd"/>
+                                </connections>
                             </datePicker>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l7h-N9-wGb">
                                 <rect key="frame" x="20" y="320" width="177" height="177"/>
@@ -44,26 +47,26 @@
                                     <constraint firstAttribute="width" secondItem="OOb-bD-qgO" secondAttribute="height" id="hoD-pg-4LA"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3h-iV-hZs">
-                                <rect key="frame" x="87.5" y="398" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3h-iV-hZs">
+                                <rect key="frame" x="88" y="398.5" width="41.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQV-PB-7Ek">
-                                <rect key="frame" x="284.5" y="398" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQV-PB-7Ek">
+                                <rect key="frame" x="285" y="398.5" width="41.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voo-wn-czk">
-                                <rect key="frame" x="284.5" y="595" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voo-wn-czk">
+                                <rect key="frame" x="285" y="595.5" width="41.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUG-Js-QTy">
-                                <rect key="frame" x="87.5" y="595" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUG-Js-QTy">
+                                <rect key="frame" x="88" y="595.5" width="41.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -132,7 +135,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="DatePicker" destination="4E7-xh-vIm" id="xTY-0q-Gz2"/>
+                        <outletCollection property="afterLabelCollection" destination="DNU-Tb-1Zi" collectionClass="NSMutableArray" id="Ex5-ew-ILd"/>
+                        <outletCollection property="afterLabelCollection" destination="aPT-r4-2g3" collectionClass="NSMutableArray" id="H6s-0F-dv6"/>
+                        <outletCollection property="afterLabelCollection" destination="wDI-sk-eKD" collectionClass="NSMutableArray" id="iGI-qL-aGf"/>
+                        <outletCollection property="afterLabelCollection" destination="NuO-a9-46z" collectionClass="NSMutableArray" id="iUv-EA-PmV"/>
+                        <outletCollection property="showAfterLabelCollection" destination="d3h-iV-hZs" collectionClass="NSMutableArray" id="FMx-8L-0MR"/>
+                        <outletCollection property="showAfterLabelCollection" destination="tQV-PB-7Ek" collectionClass="NSMutableArray" id="i1t-u0-o5k"/>
+                        <outletCollection property="showAfterLabelCollection" destination="FUG-Js-QTy" collectionClass="NSMutableArray" id="VBf-zA-I0Z"/>
+                        <outletCollection property="showAfterLabelCollection" destination="voo-wn-czk" collectionClass="NSMutableArray" id="0mr-5A-nK8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
